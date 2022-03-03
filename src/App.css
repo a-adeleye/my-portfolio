@@ -294,10 +294,70 @@ a:active {
   font-size: 1em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 810px) {
   .left {
     width: 0;
     min-width: 0;
     overflow: hidden;
+  }
+
+  .right {
+    margin: auto;
+    width: 95%;
+  }
+
+  .technologies {
+    justify-content: flex-start;
+  }
+
+  body {
+    height: unset;
+  }
+
+  .App {
+    padding: 2em 0;
+  }
+
+  header {
+    height: 300px;
+    gap: 2em;
+    line-height: 2em;
+  }
+
+  .technology {
+    flex-basis: 15%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  article {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+  }
+
+  .technologies > h4 {
+    width: 100%;
+  }
+
+  .works {
+    gap: 1em;
+  }
+
+  .text,
+  .image {
+    flex-basis: 100%;
+  }
+
+  .text {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  header {
+    height: unset;
   }
 }
