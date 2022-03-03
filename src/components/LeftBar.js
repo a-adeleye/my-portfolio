@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 import AWSSAA from "../images/saa.png";
 import googleCert from "../images/google-data-analytics.png";
 import AWSCP from "../images/cp.png";
+import avatar from "../images/avatar.jpg";
 
 function LeftBar() {
   return (
     <section className="left">
       <div className="info-bar">
         <div className="info-header">
-          <div className="info-avatar"></div>
+          <div className="info-avatar">
+            <img src={avatar} alt="" />
+          </div>
           <h2 className="info-name">Adeleye Adeyemi</h2>
           <p className="info-title">Frontend Developer</p>
           <p className="info-email">

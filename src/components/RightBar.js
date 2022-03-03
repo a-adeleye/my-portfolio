@@ -15,22 +15,30 @@ import firebase from "../images/technologies/firebase.svg";
 import git from "../images/technologies/git.svg";
 import npm from "../images/technologies/npm.svg";
 import jest from "../images/technologies/jest.svg";
+import webstore from "../images/projects/webstore.png";
+import weatherApp from "../images/projects/weather-app.png";
+import adminDashboard from "../images/projects/admin-dashboard.png";
+import resumeMaker from "../images/projects/resume-maker.png";
+import assessmentSite from "../images/projects/assessment.png";
+import leatraSite from "../images/projects/leatra.png";
+import christmasStore from "../images/projects/christmas-store.png";
+import tenzies from "../images/projects/tenzies.png";
+import memoryGame from "../images/projects/memory-game.png";
+import todoApp from "../images/projects/todo-app.png";
 
 function RightBar() {
   return (
     <section className="right">
       <header>
-        <h2>Hello there</h2>
-        <p>
-          My name is Adeleye and I am a Frontend Developer who loves to work
-          with JavaScript technologies. Right now my mind is focused on learning
-          everything that is related to Web Development. I'm also passionate
-          about exploring new technologies which I can leverage to solve
-          real-life problems.
-        </p>
+        <h2>Hello there 👋</h2>
+        <h3>
+          I am a creative Frontend Developer based in Dubai who loves to work
+          with JavaScript technologies
+        </h3>
+        <p>I build beautiful and well-engineered websites and web apps</p>
       </header>
-      <div className="technologies">
-          <h4>Technologies & Tools</h4>
+      <article className="technologies">
+        <h4>Technologies & Tools I use</h4>
         <div className="technologies-container">
           <div className="technology">
             <img src={html} alt="html5" />
@@ -101,12 +109,193 @@ function RightBar() {
             <p>Jest</p>
           </div>
         </div>
-      </div>
-      
+      </article>
+
       <div className="works">
-          <h4>Works</h4>
-          <article className="light"></article>
-          <article className="dark"></article>
+        <h4>Works</h4>
+        <article className="light">
+          <div className="text">
+            <h3>Single Page Website</h3>
+            <p>
+              A single page website for Leatra LTD created with <em>HTML</em>,{" "}
+              <em>CSS</em> and <em>Vanilla JS</em>.
+            </p>
+            <a href="https://leatra.com/" target="_blank" rel="noreferrer">
+              View live site
+            </a>
+          </div>
+          <div className="image">
+            <img src={leatraSite} alt="" />
+          </div>
+        </article>
+        <article className="dark">
+          <div className="text">
+            <h3>Resume Maker App</h3>
+            <p>
+              A resume template maker app boostrapped with <em>React</em>.
+            </p>
+            <a
+              href="https://a-adeleye.github.io/weather-app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live app
+            </a>
+          </div>
+          <div className="image">
+            <img src={resumeMaker} alt="" />
+          </div>
+        </article>
+
+        <article className="light">
+          <div className="text">
+            <h3>Webstore Project</h3>
+            <p>
+              A simple e-commerce app boostrapped with <em>React</em>
+            </p>
+            <a
+              href="https://a-adeleye.github.io/e-commerce/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live app
+            </a>
+          </div>
+          <div className="image">
+            <img src={webstore} alt="" />
+          </div>
+        </article>
+        <article className="dark">
+          <div className="text">
+            <h3>Skill Assessment App</h3>
+            <p>
+              Online assessment app created with <em>moodle</em>,{" "}
+              <em>Vanilla JS</em>, <em>HMTL</em> and <em>CSS</em>.
+            </p>
+            <a
+              href="https://leatra.com/assessment/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live app
+            </a>
+          </div>
+          <div className="image">
+            <img src={assessmentSite} alt="" />
+          </div>
+        </article>
+        <article className="light">
+          <div className="text">
+            <h3>Weather App</h3>
+            <p>
+              Weather app created with <em>Vanilla JS</em> and{" "}
+              <em>Openweather API</em>
+            </p>
+            <a
+              href="https://a-adeleye.github.io/weather-app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live app
+            </a>
+          </div>
+          <div className="image">
+            <img src={weatherApp} alt="" />
+          </div>
+        </article>
+        <article className="dark">
+          <div className="text">
+            <h3>Analytics Dashboard UI Concept</h3>
+            <p>
+              A music dashboard ui concept created with <em>HTML</em> and{" "}
+              <em>CSS</em>
+            </p>
+            <a
+              href="https://a-adeleye.github.io/admin-dashboard/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View mock app
+            </a>
+          </div>
+          <div className="image">
+            <img src={adminDashboard} alt="" />
+          </div>
+        </article>
+        <article className="light">
+          <div className="text">
+            <h3>Online Store</h3>
+            <p>
+              A christmas online shop made with <em>HTML</em>, <em>CSS</em> and{" "}
+              <em>Vanilla JS</em>.
+            </p>
+            <a
+              href="https://a-adeleye.github.io/christmas-store/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View mock site
+            </a>
+          </div>
+          <div className="image">
+            <img src={christmasStore} alt="" />
+          </div>
+        </article>
+        <article className="dark">
+          <div className="text">
+            <h3>Todo App</h3>
+            <p>
+              A multi-functional todo app with CRUD operations bootstrapped with{" "}
+              <em>React</em>.
+            </p>
+            <a
+              href="https://a-adeleye.github.io/todo/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View site
+            </a>
+          </div>
+          <div className="image">
+            <img src={todoApp} alt="" />
+          </div>
+        </article>
+        <article className="light">
+          <div className="text">
+            <h3>Memory Game</h3>
+            <p>
+              Addictive memory tester game bootstrapped with <em>React</em>
+            </p>
+            <a
+              href="https://a-adeleye.github.io/memory-game/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live app
+            </a>
+          </div>
+          <div className="image">
+            <img src={memoryGame} alt="" />
+          </div>
+        </article>
+        <article className="dark">
+          <div className="text">
+            <h3>Tenzies Game</h3>
+            <p>
+              An addictive dice game bootstrapped with <em>React</em>.
+            </p>
+            <a
+              href="https://a-adeleye.github.io/tenzies-game/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live app
+            </a>
+          </div>
+          <div className="image">
+            <img src={tenzies} alt="" />
+          </div>
+        </article>
       </div>
     </section>
   );
