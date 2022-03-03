@@ -21,6 +21,7 @@ body {
   height: 100%;
   display: flex;
   position: relative;
+  overflow-y: hidden;
 }
 
 .left {
@@ -44,6 +45,7 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   position: relative;
+  padding-bottom: 3em;
 }
 
 .right::-webkit-scrollbar {
@@ -367,6 +369,15 @@ a:active {
   .hide {
     display: none;
   }
+
+  .body-details {
+    font-size: 1em;
+  }
+
+  .info-title,
+  .info-email {
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -377,8 +388,17 @@ a:active {
     border-radius: 12px;
   }
 
+  header {
+    font-size: 0.9em;
+  }
+
+  .technologies {
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
   .technologies > h4 {
     width: 100%;
+    margin-bottom: 1em;
   }
 
   .works {
