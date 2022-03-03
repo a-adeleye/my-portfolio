@@ -380,6 +380,27 @@ a:active {
   }
 }
 
+.text,
+.image {
+  position: relative;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+
+.text {
+  transform: translateX(-100px);
+}
+
+.image {
+  transform: translateY(100px);
+}
+
+.text.reveal,
+.image.reveal {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 @media only screen and (max-width: 480px) {
   article {
     flex-wrap: wrap-reverse;
