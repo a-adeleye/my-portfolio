@@ -30,6 +30,9 @@ function RightBar() {
   return (
     <section className="right">
       <header>
+        <div className="sidebar-toggle-btn2">
+          <i className="fa-solid fa-ellipsis-vertical"></i>
+        </div>
         <h2>Hello there 👋</h2>
         <h3>
           I am a creative Frontend Developer based in Dubai who loves to work

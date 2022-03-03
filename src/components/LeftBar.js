@@ -7,6 +7,9 @@ import avatar from "../images/avatar.jpg";
 function LeftBar() {
   return (
     <section className="left">
+      <div className="sidebar-toggle-btn">
+        <i className="fa-solid fa-ellipsis-vertical"></i>
+      </div>
       <div className="info-bar">
         <div className="info-header">
           <div className="info-avatar">
