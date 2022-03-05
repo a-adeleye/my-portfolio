@@ -163,7 +163,7 @@ React.useEffect(() => {
               A resume template maker app boostrapped with <em>React</em>.
             </p>
             <a
-              href="https://a-adeleye.github.io/weather-app/"
+              href="https://a-adeleye.github.io/cv-maker/"
               target="_blank"
               rel="noreferrer"
             >
