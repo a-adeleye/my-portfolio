@@ -25,32 +25,31 @@ import christmasStore from "../images/projects/christmas-store.png";
 import tenzies from "../images/projects/tenzies.png";
 import memoryGame from "../images/projects/memory-game.png";
 import todoApp from "../images/projects/todo-app.png";
-import React from 'react';
+import React from "react";
 
 function RightBar() {
-
-React.useEffect(() => {
+  React.useEffect(() => {
     function reveal() {
-        const texts = document.querySelectorAll(".text");
-        const images = document.querySelectorAll(".image");
-        for (let i = 0; i < texts.length; i++) {
-          const windowHeight = window.innerHeight;
-          const elementTop = texts[i].getBoundingClientRect().top;
-          const elementVisible = 150;
-          if (elementTop < windowHeight - elementVisible) {
-            texts[i].classList.add("reveal");
-            images[i].classList.add("reveal");
-          } else {
-            texts[i].classList.remove("reveal");
-            images[i].classList.remove("reveal");
-          }
+      const texts = document.querySelectorAll(".text");
+      const images = document.querySelectorAll(".image");
+      for (let i = 0; i < texts.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = texts[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          texts[i].classList.add("reveal");
+          images[i].classList.add("reveal");
+        } else {
+          texts[i].classList.remove("reveal");
+          images[i].classList.remove("reveal");
         }
       }
-      
-      window.addEventListener("scroll", reveal, true);
-      
-      reveal();
-})
+    }
+
+    window.addEventListener("scroll", reveal, true);
+
+    reveal();
+  });
 
   return (
     <section className="right">
@@ -214,6 +213,25 @@ React.useEffect(() => {
         </article>
         <article className="light">
           <div className="text">
+            <h3>Todo App</h3>
+            <p>
+              A multi-functional todo app with CRUD operations bootstrapped with{" "}
+              <em>React</em> + Redux + Firebase authentication.
+            </p>
+            <a
+              href="https://a-adeleye.github.io/todo-app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View site
+            </a>
+          </div>
+          <div className="image">
+            <img src={todoApp} alt="" />
+          </div>
+        </article>
+        <article className="dark">
+          <div className="text">
             <h3>Weather App</h3>
             <p>
               Weather app created with <em>Vanilla JS</em> and{" "}
@@ -231,7 +249,7 @@ React.useEffect(() => {
             <img src={weatherApp} alt="" />
           </div>
         </article>
-        <article className="dark">
+        <article className="light">
           <div className="text">
             <h3>Analytics Dashboard UI Concept</h3>
             <p>
@@ -250,7 +268,7 @@ React.useEffect(() => {
             <img src={adminDashboard} alt="" />
           </div>
         </article>
-        <article className="light">
+        <article className="dark">
           <div className="text">
             <h3>Online Store</h3>
             <p>
@@ -269,25 +287,7 @@ React.useEffect(() => {
             <img src={christmasStore} alt="" />
           </div>
         </article>
-        <article className="dark">
-          <div className="text">
-            <h3>Todo App</h3>
-            <p>
-              A multi-functional todo app with CRUD operations bootstrapped with{" "}
-              <em>React</em>.
-            </p>
-            <a
-              href="https://a-adeleye.github.io/todo/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View site
-            </a>
-          </div>
-          <div className="image">
-            <img src={todoApp} alt="" />
-          </div>
-        </article>
+
         <article className="light">
           <div className="text">
             <h3>Memory Game</h3>
