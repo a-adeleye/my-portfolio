@@ -5,10 +5,25 @@ import AWSCP from "../images/cp.png";
 import avatar from "../images/avatar.jpg";
 
 function LeftBar() {
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: "-5vh"
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        damping: 32
+      }
+    },
+  };
+
   return (
-    <section className="left">
+    <motion.section initial="hidden" animate="visible" variants={variants}className="left">
       <div className="sidebar-toggle-btn">
-        <i className="fa-solid fa-ellipsis-vertical"></i>
+      <i className="fa-solid fa-bars"></i>
       </div>
       <div className="info-bar">
         <div className="info-header">
@@ -89,7 +104,7 @@ function LeftBar() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

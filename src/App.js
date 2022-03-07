@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import LeftBar from "./components/LeftBar";
-import RightBar from "./components/RightBar";
+import Main from "./components/Main";
+import { motion } from "framer-motion";
 
 function App() {
   React.useEffect(() => {
@@ -19,11 +20,21 @@ function App() {
       .addEventListener("click", toggle);
   });
 
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
-    <div className="App">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      className="App"
+    >
       <LeftBar />
-      <RightBar />
-    </div>
+      <Main />
+    </motion.div>
   );
 }
 
