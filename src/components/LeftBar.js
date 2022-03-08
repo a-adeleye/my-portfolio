@@ -23,7 +23,7 @@ function LeftBar() {
   return (
     <motion.section initial="hidden" animate="visible" variants={variants}className="left">
       <div className="sidebar-toggle-btn">
-      <i className="fa-solid fa-bars"></i>
+      <i className="fa-solid fa-xmark"></i>
       </div>
       <div className="info-bar">
         <div className="info-header">
