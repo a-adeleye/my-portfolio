@@ -166,8 +166,7 @@ function Works() {
         <div className="text">
           <h3>Analytics Dashboard UI Concept</h3>
           <p>
-            A music dashboard ui concept created with <em>HTML</em> and{" "}
-            <em>CSS</em>
+            A music dashboard ui concept bootstrapped with <em>React</em>
           </p>
           <div className="work-buttons">
             <a
